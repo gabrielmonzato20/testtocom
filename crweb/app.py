@@ -19,7 +19,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     conta = contapalavrasite(['https://pt.wikipedia.org/wiki/Ci%C3%AAncia_da_computa%C3%A7%C3%A3o'],'computador')
-    return jsonify(conta.conta_palavra())
+    return jsonify(Palavra=conta.conta_palavra())
 
 
 
